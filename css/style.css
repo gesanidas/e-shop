@@ -1,0 +1,461 @@
+/* ==================================================================
+   Το αρχείο αυτό χωρίζεται σε κομμάτια που αφορούν διάφορα τμήματα
+   της css για τις σελίδες. Πιο συγκεκριμένα :
+   - Index.php
+   - Login.php
+   - Painting.php
+   - ?paint_id
+   - Profile.php
+   - Cart-Page
+   - Contact.php
+   - 404.php
+   - Admin page
+   - Media Queries
+   ==================================================================
+*/
+
+
+
+
+/* =========================
+   1. Index - CSS
+   =========================
+*/
+
+header {
+    background: url(../images/bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    margin: 5px;
+}
+
+.logo a:link, .logo a:focus, .logo a:visited {
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+}
+
+.logo a:hover {
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo h2 {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+nav {
+    text-align: center;
+    padding-top: 30px;
+}
+
+nav a,nav a:link, nav a:focus, nav a:visited {
+    color: #fff;
+    font-weight: 200;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #fff;
+    font-weight: 200;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.cart {
+    padding-top: 30px;
+    float: right;
+}
+
+.cart a:link, .cart a:focus, .cart a:visited {
+    color: #fff;
+    font-weight: 200;
+}
+
+.cart a:hover {
+    color: #fff;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+#cart-circle {
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    display: inline;
+    padding: 0 5px;
+}
+
+.header-message {
+    text-align: center;
+    padding: 150px 0;
+}
+
+.header-message > h2 {
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.header-message > p {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0 150px;
+}
+
+.header-button {
+    text-align: center;
+}
+
+.header-move-down {
+    animation: updown 2s infinite;
+    position: relative;
+    text-align: center;
+    -webkit-animation: updown 2s infinite; /* Chrome, Safari, Opera */
+}
+
+.header-move-down a:link, .header-move-down a:focus, .header-move-down a:hover, .header-move-down a:visited {
+    color: #fff;
+}
+
+#about {
+    background: #f0f0f0;
+    padding: 50px;
+}
+
+.about-section-heading {
+    text-align: center;
+}
+
+.about-section-image {
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+
+.about-section-description {
+    padding: 50px 40px;
+}
+
+#painting {
+    padding: 50px 0;
+}
+
+.painting-search-section-content {
+    margin: 20px 0;
+    background: #eee;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.masonry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.painting-section-heading {
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.painting-section-content {
+    margin: 20px 0;
+    background: #eee;
+    padding: 10px;
+    display: inline-block;
+    width: 31%;
+    height: 100%;
+}
+
+.painting-whole-section-content {
+    margin: 20px 0;
+    background: #eee;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+footer {
+    background: #353535;
+    color: #f0f0f0;
+    padding: 50px 0;
+}
+
+.footer-section-features {
+    text-align: center;
+}
+
+.footer-section-features > h5 {
+    color: #fff;
+}
+
+.footer-section-features > span {
+    border-radius: 50%;
+    border: 1px solid #585858;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.footer-section-features > p {
+    margin: 10px 10px 0 10px;
+}
+
+.footer-hr-top {
+    margin: 60px 0 0 0;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social a:link, .footer-social a:focus, .footer-social a:visited {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+.footer-hr-bottom {
+    margin: 5px 0 0 0;
+}
+
+.footer-copyright {
+    font-size: 14px;
+}
+
+.footer-payment {
+    float: right;
+    margin-top: -5px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes updown {
+  0%, 100% {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+}
+
+@keyframes updown {
+  0%, 100% {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+}
+
+/* =========================
+   2. Login - CSS
+   =========================
+*/
+#login {
+    padding: 50px 0;
+}
+
+.login-section-heading {
+    text-align: center;
+}
+
+.myInputLogin {
+    margin-left: 257px;
+    margin-top: 10px;
+}
+
+/* =========================
+   3. Painting - CSS
+   =========================
+*/
+#paintings {
+    padding: 50px 0;
+}
+
+label.form-label {
+    width: 130px;
+}
+
+.painting-section-heading {
+    text-align: center;
+}
+
+.painting-section-content a:link, .painting-section-content a:focus, .painting-section-content a:visited {
+    color: #353535;
+    text-transform: uppercase;
+}
+
+.painting-section-content a:hover {
+    color: #353535;
+    text-transform: uppercase;
+    text-decoration: underline; 
+}
+
+/* =========================
+   4. Paint_id - CSS
+   =========================
+*/
+#paint_id {
+    padding: 50px 0;
+}
+
+.paint-section-heading {
+    text-align: center;
+}
+
+.paint-description {
+    margin-top: 25px;
+}
+
+/* =========================
+   5. Profile-Page - CSS
+   =========================
+*/
+
+#profile {
+    margin: 40px 0;
+}
+.profile-section-heading {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* =========================
+   6. Cart-Page - CSS
+   =========================
+*/
+
+/* Αλλαγή αποστάσεων και τοποθέτηση κέντρο */
+#basket {
+	text-align: center;
+}
+
+/* Τοποθέτηση κέντρο και αλλαγή απόστασης από πάνω */
+#myTable {
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+/* Αλλαγή χρώματος, κεφαλαία, προσθήκη πλαισίου */
+#myTable th {
+	text-transform: uppercase;
+	color: #313131;
+	padding: 10px 10px;
+	border: 1px solid #EFEFEF;
+}
+
+.cart-buttons-padd {
+    padding-top: 10px; 
+}
+
+/* =========================
+   7. Contact-Page - CSS
+   =========================
+*/
+
+#contact {
+    padding: 50px 0;
+}
+
+.contact-section-heading h3 {
+    text-align: center;
+}
+
+#contact-form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#submit_btn {
+    float: right;
+}
+
+/* =========================
+   8. 404 - CSS
+   =========================
+*/
+
+#myerror {
+    margin: 40px 0;
+}
+
+/* =========================
+   9. Admin-Page - CSS
+   =========================
+*/
+
+.admin-message {
+    color: #FFF;
+    text-align: right;
+    margin-top: 30px;
+}
+
+#admin-menu {
+    margin: 40px 0;
+}
+
+#add {
+    margin: 40px 0;
+}
+
+.add-section-heading {
+    text-align: center;
+    margin: 0 auto;
+}
+
+input[type="file"] {
+    margin: auto;
+}
+
+/* =========================
+   10. Media Queries - CSS
+   =========================
+*/
+
+@media (max-width: 1046px) {
+  body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  body {
+    padding: 0;
+  }
+
+  .logo {
+      text-align: center;
+  }
+
+  .cart {
+      text-align: center;
+      float: none;
+  }
+
+  .painting-section-content {
+    width: 48%;
+}
+
+  .header-message > p {
+      padding: 0 40px;
+  }
+
+  #contact-form {
+      width : 100%;
+  }
+}
